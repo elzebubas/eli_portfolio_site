@@ -1,0 +1,89 @@
+:root {
+    --brand-primary: #EEECE2;
+    --brand-secondary: #94ACAF;
+    --brand-accent: #D47E39;
+    --brand-highlight: #AA8070;
+    --brand-dark: #4b5047;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700&family=Inter:wght@400;700&display=swap');
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto; 
+    padding: 0 20px; 
+  }
+  
+  .logo {
+    width: 100px; 
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+  }
+  
+  .text-content {
+    margin-left: 40px;
+  }
+  
+  .header {
+    margin-top: 80px; 
+  }
+  .nav-menu {
+    background-color: #f2f2f2; /* Light background color */
+    padding: 20px; /* Add padding to the menu */
+    border-bottom: 1px solid #ddd; /* Add a bottom border */
+  }
+  
+  .main-content {
+    background-color: #fff; /* White background color */
+    padding: 20px; /* Add padding to the content area */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+  .footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+    padding: 20px; /* Add padding to the footer */
+    text-align: center; /* Center align text */
+  }
+  
+  
+  a {
+    color: var(--brand-accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--brand-accent);
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--brand-accent);
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--brand-highlight);
+  }
+  
