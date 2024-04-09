@@ -13,48 +13,59 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
   }
   
-  .container {
+  ul {
+    list-style: none;
+  }
+
+  nav li, .social-icons li{
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  container {
     max-width: 800px;
     margin: 20px auto; 
     padding: 0 20px; 
   }
   
-  .logo {
+  logo {
     width: 100px; 
     position: absolute; 
     top: 20px; 
     left: 20px; 
   }
   
-  .text-content {
-    margin-left: 40px;
+  text-content {
+    margin: 0 auto;
+
   }
   
-  .header {
+  header {
     margin-top: 80px; 
   }
-  .nav-menu {
-    background-color: #f2f2f2; /* Light background color */
-    padding: 20px; /* Add padding to the menu */
-    border-bottom: 1px solid #ddd; /* Add a bottom border */
+  nav-menu {
+    background-color: #f2f2f2;
+    padding: 20px; 
+    border-bottom: 1px solid #ddd; 
   }
   
-  .main-content {
-    background-color: #fff; /* White background color */
-    padding: 20px; /* Add padding to the content area */
-    border-radius: 5px; /* Add border radius for rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  main-content {
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
   }
   
-  .footer {
-    background-color: #333; /* Dark background color */
-    color: #fff; /* Light text color */
-    padding: 20px; /* Add padding to the footer */
-    text-align: center; /* Center align text */
+  footer {
+    background-color: #333;  
+    color: #fff;  
+    padding: 20px;  
+    text-align: center;  
   }
   
   
