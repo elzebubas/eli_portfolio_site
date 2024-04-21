@@ -211,3 +211,5 @@ main {
 }
 
 .sun {
+  animation: color-change 4s infinite alternate linear;
+}
