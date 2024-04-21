@@ -14,11 +14,16 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   margin: 0;
   padding: 0;
+  margin-bottom: 100px;
+}
+
+img {
+  max-width: 100%;
 }
 
 ul {
@@ -26,18 +31,22 @@ ul {
   padding: 0;
 }
 
-nav .nav-menu li,
-.social-icons li {
-  display: inline-block;
-  width: 100%;
-  padding: 0 10px;
+.nav-menu {
+  padding: 0px 0; /* Adjust padding as needed */
+  border-bottom: 1px solid #ddd; /* Add bottom border if desired */
+  text-align: left; 
 }
+
+.nav-menu li {
+  display: inline-block; /* Display the list items in a line */
+  padding: 0 10px; /* Add padding between the links as needed */
+}
+
 
 .container {
   max-width: 800px;
   margin: 20px auto;
   padding: 0 20px;
-  margin-left: 20px;
 }
 
 .logo {
@@ -51,15 +60,12 @@ nav .nav-menu li,
 header {
   margin-top: 80px;
   background-color: #ffe4c4;
-  text-align: center;
   padding: 10px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-menu {
-  background-color: #f2f2f2;
   padding: 20px;
-  border-bottom: 1px solid #ddd;
 }
 
 .main-content {
@@ -75,6 +81,9 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
+  margin-top: 20px;
+  bottom: 0; 
+  width: 100%; 
 }
 
 a {
@@ -99,15 +108,23 @@ a:hover {
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: 0.2s opacity;
 }
 
 .button:hover {
   background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.8;
 }
+
+
 
 .row {
   margin: 25px 0;
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 }
 
 #work .row {
@@ -119,7 +136,7 @@ a:hover {
   text-align: center;
   background-color: #ffe4c4;
   padding: 20px 0;
-  display: inline-block;
+  display: block;
   width: 100%;
 }
 
