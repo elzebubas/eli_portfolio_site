@@ -41,12 +41,6 @@ ul {
   text-align: left; 
 }
 
-.nav-menu li {
-  display: inline-block; /* Display the list items in a line */
-  padding: 0 10px; /* Add padding between the links as needed */
-}
-
-
 .container {
   max-width: 800px;
   margin: 20px auto;
@@ -54,27 +48,33 @@ ul {
 }
 
 .logo {
-  width: 100px;
-  position: absolute;
   top: 20px;
   left: 20px;
-  max-width: 250px;
+  max-width: 150px;
 }
 
 header {
-  margin-top: 80px;
-  background-color: #ffe4c4;
-  padding: 10px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  padding: 10px 0 4px;
+}
+
+h1 {
+  padding: 0 20px;
 }
 
 .nav-menu {
   padding: 20px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.nav-menu li {
+  display: inline-block;
+  padding: 0 10px;
 }
 
 .main-content {
   background-color: #fff;
-  padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
@@ -86,8 +86,8 @@ footer {
   padding: 20px;
   text-align: center;
   margin-top: 20px;
-  bottom: 0; 
-  width: 100%; 
+  bottom: 0;
+  width: 100%;
 }
 
 a {
@@ -103,9 +103,9 @@ a:hover {
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--brand-accent); 
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif; 
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -116,54 +116,56 @@ a:hover {
 }
 
 .button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--brand-highlight); 
   opacity: 0.8;
 }
 
-
-
 .row {
   margin: 25px 0;
-  .row::after {
+}
+
+.row::after {
   content: "";
   clear: both;
   display: table;
 }
+
+[class*="col-"] {
+  float: left;
 }
 
-#work .row {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #4a4a4a;
+.navtoggle li:not(:last-child) {
+  display: none;
 }
 
-#hero h1 {
-  text-align: center;
-  background-color: #ffe4c4;
-  padding: 20px 0;
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
   display: block;
-  width: 100%;
 }
 
-#profile {
-  text-align: center;
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
 }
 
-#profile img {
-  width: 150px;
-  height: auto;
+.navtoggle.responsive li  {
   display: block;
-  margin: 0 auto 20px;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
 }
 
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
-}
-
-main {
-  padding-top: 99px;
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 /* Medium devices (640px and larger) */
@@ -175,11 +177,17 @@ main {
 
   nav {
     width: auto;
+    float: right;
     margin-top: 4px;
   }
 
+  main {
+    font-size: 18px;
+  }
+
   [class*="col-"] {
-    padding-bottom: 20px;
+    float: left;
+    padding: 10px;
   }
 
   .col-md-6 {
@@ -192,7 +200,18 @@ main {
   [class*="col-"] {
     padding-bottom: 0; 
   }
+  .logo {
+    position: relative; 
+    top: auto; 
+    left: auto;
+    max-width: 150px;
+  }
+
+  .navtoggle {
+    display: none; 
+  }
 }
+
 .skills-tools-wrapper {
   display: flex;
   flex-wrap: wrap; 
@@ -202,11 +221,13 @@ main {
   width: calc(50% - 20px); 
   margin-right: 20px; 
 }
+
 .container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
+
 @keyframes color-change {
   0% { fill: #c2f9f8c0; } 
   50% { fill: #e7cee794; } 
@@ -232,5 +253,3 @@ main {
   max-width: 100%;
   height: auto;
 }
-
-  
