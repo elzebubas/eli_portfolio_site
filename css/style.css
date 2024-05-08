@@ -31,14 +31,16 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 100px;
+  color: #AA8070;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Cairo", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
+  font-size: 50px;
   font-variation-settings:"slnt" 0;
-  color:#4b5047;
+  color:#2a2b37d0;
 }
 
 img {
@@ -65,22 +67,34 @@ ul {
 header {
   margin-top: 10px;
   padding: 10px 0 4px;
+  
 }
+
+hr {
+  opacity: 20%;
+  padding: 10px 0 4px;
+
+}
+
 
 h1 {
   padding: 0 20px;
-  color:#a52475;
-
+  color: #77a6c6;
+  font-weight: 200;
+  font-size: 50px;
+  text-align:center
 }
 
 .nav-menu {
   padding: 20px;
   text-align: left;
+  
 }
 
 .nav-menu li {
   display: inline-block;
   padding: 0 10px;
+
 }
 
 .main-content {
@@ -90,8 +104,8 @@ h1 {
 }
 
 footer {
-  background-color: #fdf7f1;
   color: #77a6c6;
+  color: #2e3a42;
   padding: 20px;
   text-align: center;
   margin-top: 20px;
@@ -100,7 +114,7 @@ footer {
 }
 
 a {
-  color: var(--brand-accent);
+  color: #77a6c6;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -111,22 +125,24 @@ a:hover {
 
 .button {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #943f3f;
-  color: #fff;
+  padding: 10px 0px;
+  color: #671818;
   font-family: 'Poppins', sans-serif; 
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   border: none;
-  border-radius: 20px;
+  border-radius: 15px;
   cursor: pointer;
   transition: 0.2s opacity;
 }
 
+
 .button:hover {
   background-color: var(--brand-highlight); 
   opacity: 0.8;
+  color: #ffffff;
+
 }
 
 .row {
@@ -266,4 +282,5 @@ a:hover {
   width: 100%;
   max-width: 100%;
   height: auto;
+  opacity: 50%
 }
