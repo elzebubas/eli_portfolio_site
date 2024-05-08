@@ -284,3 +284,7 @@ a:hover {
   height: auto;
   opacity: 50%
 }
+.profile-picture img {
+max-width: 95%;
+height: auto;
+}
