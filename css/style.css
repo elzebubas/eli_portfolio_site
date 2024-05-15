@@ -1,8 +1,8 @@
 :root {
-  --brand-primary: #EEECE2;
-  --brand-secondary: #94ACAF;
-  --brand-accent: #D47E39;
-  --brand-highlight: #AA8070;
+  --brand-primary: #eeece2;
+  --brand-secondary: #94acaf;
+  --brand-accent: #d47e39;
+  --brand-highlight: #996c5b;
   --brand-dark: #4b5047;
 }
 
@@ -22,25 +22,28 @@
 body {
   font-family: "Cairo", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings:"slnt" 0;
-  font-size: 18px;
   font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  font-size: 18px;
   line-height: 1.5;
   margin: 0;
   padding: 0;
   margin-bottom: 100px;
-  color: #AA8070;
+  color: #996c5b;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Cairo", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
-  font-size: 50px;
-  font-variation-settings:"slnt" 0;
-  color:#2a2b37d0;
+  font-variation-settings: "slnt" 0;
+  color: #2a2b37c6;
 }
 
 img {
@@ -53,12 +56,13 @@ ul {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 20px auto;
   padding: 0 20px;
 }
 
 .logo {
+  position: relative;
   top: 20px;
   left: 20px;
   max-width: 150px;
@@ -67,34 +71,29 @@ ul {
 header {
   margin-top: 10px;
   padding: 10px 0 4px;
-  
 }
 
 hr {
-  opacity: 20%;
+  opacity: 0.2;
   padding: 10px 0 4px;
-
 }
-
 
 h1 {
   padding: 0 20px;
   color: #77a6c6;
   font-weight: 200;
   font-size: 50px;
-  text-align:center
+  text-align: center;
 }
 
 .nav-menu {
   padding: 20px;
   text-align: left;
-  
 }
 
 .nav-menu li {
   display: inline-block;
   padding: 0 10px;
-
 }
 
 .main-content {
@@ -104,7 +103,6 @@ h1 {
 }
 
 footer {
-  color: #77a6c6;
   color: #2e3a42;
   padding: 20px;
   text-align: center;
@@ -125,9 +123,9 @@ a:hover {
 
 .button {
   display: inline-block;
-  padding: 10px 0px;
+  padding: 10px 0;
   color: #671818;
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -137,12 +135,10 @@ a:hover {
   transition: 0.2s opacity;
 }
 
-
 .button:hover {
-  background-color: var(--brand-highlight); 
+  background-color: var(--brand-highlight);
   opacity: 0.8;
-  color: #ffffff;
-
+  color: #fff;
 }
 
 .row {
@@ -163,7 +159,8 @@ a:hover {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -175,7 +172,7 @@ a:hover {
   padding-right: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
@@ -183,13 +180,13 @@ a:hover {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -220,6 +217,7 @@ a:hover {
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
+
   .navtoggle li:last-child {
     display: none;
   }
@@ -232,11 +230,11 @@ a:hover {
 
 @media only screen and (min-width: 1024px) {
   [class*="col-"] {
-    padding-bottom: 0; 
+    padding-bottom: 0;
   }
+
   .logo {
-    position: relative; 
-    top: auto; 
+    top: auto;
     left: auto;
     max-width: 150px;
   }
@@ -244,47 +242,56 @@ a:hover {
 
 .skills-tools-wrapper {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .skills-tools-wrapper .col-md-6 {
-  width: calc(50% - 20px); 
-  margin-right: 20px; 
-}
-
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  width: calc(50% - 20px);
+  margin-right: 20px;
 }
 
 @keyframes color-change {
-  0% { fill: #c2f9f8c0; } 
-  50% { fill: #e7cee794; } 
-  100% { fill: #fff0b698; } 
+  0% {
+    fill: #c2f9f8c0;
+  }
+  50% {
+    fill: #e7cee794;
+  }
+  100% {
+    fill: #fff0b698;
+  }
 }
 
 @keyframes cloud-move {
-  from { transform: translate(1px, 1px); }
-  to { transform: translate(20px, 0); } 
+  from {
+    transform: translate(1px, 1px);
+  }
+  to {
+    transform: translate(20px, 0);
+  }
 }
 
 @keyframes cloud-move-reverse {
-  from { transform: translate(10px, 50px); } 
-  to { transform: translate(68px, 0); }
+  from {
+    transform: translate(10px, 50px);
+  }
+  to {
+    transform: translate(68px, 0);
+  }
 }
 
 .cloud {
-  animation: color-change 6s infinite alternate linear, cloud-move 3s infinite alternate linear, cloud-move-reverse 3s infinite alternate linear; 
+  animation: color-change 6s infinite alternate linear, cloud-move 3s infinite alternate linear, cloud-move-reverse 3s infinite alternate linear;
 }
 
 .bcn-svg {
   width: 100%;
   max-width: 100%;
   height: auto;
-  opacity: 50%
+  opacity: 0.5;
 }
+
 .profile-picture img {
-max-width: 95%;
-height: auto;
+  max-width: 95%;
+  height: auto;
 }

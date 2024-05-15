@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Eli Strum</title>
@@ -12,16 +13,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-    
     <header>
-        <section id="toplinks">
-            <nav class="nav-menu"> 
-                <div class="container">
-                    <div class="navtoggle" id="myNavtoggle">
+        <nav class="nav-menu">
+            <div class="container">
+                <div class="navtoggle" id="myNavtoggle">
                     <a href="/">
                         <img src="/img/logo-slice.svg" alt="logo" class="logo">
-                    </a>     
+                    </a>
                     <ul>
                         <li><a href="index.html">Work</a></li>
                         <li><a href="about.html">About</a></li>
@@ -29,10 +29,10 @@
                         <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                     </ul>
                 </div>
-                </div>
-            </nav>
-        </section>
+            </div>
+        </nav>
     </header>
+
     <main>
         <section id="profile" class="container">
             <h1>My Process</h1>
@@ -64,7 +64,7 @@
                 </div>
                 <div class="col-md-6">
                     <h2>Tools</h2>
-                    <ul>    
+                    <ul>
                         <li>Figma</li>
                         <li>Sketch</li>
                         <li>Adobe XD</li>
@@ -74,45 +74,40 @@
             </div>
         </section>
     </main>
-    
-    
-    
+
     <footer>
-        <section id="footer">
-            <div class="container">
-                <h2>Get in Touch</h2>
-                <p>
-                    Do you like my work and want to discuss opportunities? 
-                </p>
-                <div>
-                    <a href="mailto:elistrdesign@gmail.com">Email me</a>
-                </div>
-                <ul class="social-icons">
-                    <li><a href="https://www.linkedin.com/in/eli-strum/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="https://www.behance.net/elizabethstrum" target="_blank"><i class="fab fa-behance"></i></a></li>
-                </ul>
-                <p>Copyright Elizabeth 2024</p>
-            </div> 
+        <section id="contact" class="container">
+            <h2>Get in Touch</h2>
+            <p>Do you like my work and want to discuss opportunities?</p>
+            <div>
+                <a href="mailto:elistrdesign@gmail.com">Email me</a>
+            </div>
+            <ul class="social-icons">
+                <li><a href="https://www.linkedin.com/in/eli-strum/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.behance.net/elizabethstrum" target="_blank"><i class="fab fa-behance"></i></a></li>
+            </ul>
+            <p>Copyright Elizabeth 2024</p>
         </section>
     </footer>
+
     <script src="js/scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-    $(document).ready(function(){
-        $(".navbar a").on('click', function(event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function(){
-                    window.location.hash = hash;
-                });
-            }
+        $(document).ready(function () {
+            $(".navbar a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
         });
-    });
     </script>
-    
 </body>
+
 </html>
