@@ -139,6 +139,7 @@ a:hover {
   background-color: var(--brand-highlight);
   opacity: 0.8;
   color: #fff;
+  padding: 10px;
 }
 
 .row {
