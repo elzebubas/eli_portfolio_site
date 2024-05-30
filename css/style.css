@@ -4,6 +4,8 @@
   --brand-accent: #d47e39;
   --brand-highlight: #996c5b;
   --brand-dark: #4b5047;
+  color: #996c5b;
+
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Kanit:wght@400;700&display=swap'); */
@@ -30,7 +32,7 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 100px;
-  color: #996c5b;
+  color: var(--brand-highlight);
 }
 
 h1,
@@ -43,16 +45,23 @@ h6 {
   font-optical-sizing: auto;
   font-weight: 500;
   font-variation-settings: "slnt" 0;
-  color: #2a2b37c6;
+  color: var(--brand-dark);
 }
+
+h2 {
+  font-size: 40px;
+}
+
 
 img {
   max-width: 100%;
 }
 
 ul {
-  list-style: none;
+  list-style-type: disc;
+  margin-left: 20px;
   padding: 0;
+  
 }
 
 .container {
@@ -111,10 +120,13 @@ footer {
   width: 100%;
 }
 
+
 a {
   color: #77a6c6;
   text-decoration: none;
   transition: color 0.3s ease;
+  font-size: 22px;
+
 }
 
 a:hover {
@@ -295,4 +307,11 @@ a:hover {
 .profile-picture img {
   max-width: 95%;
   height: auto;
+}
+
+.box-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Add some padding to make the shadow more noticeable */
+  margin-bottom: 20px; /* Add some space between the sections */
+  border-radius: 8px; /* Optional: Add border-radius for rounded corners */
 }
