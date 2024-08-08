@@ -24,10 +24,10 @@
 body {
   font-family: "Cairo", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   font-variation-settings: "slnt" 0;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
   margin: 0;
   padding: 0;
@@ -220,7 +220,7 @@ a:hover {
   }
 
   main {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   [class*="col-"] {
