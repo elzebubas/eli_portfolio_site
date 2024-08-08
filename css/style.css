@@ -313,3 +313,35 @@ a:hover {
   max-width: 95%;
   height: auto;
 }
+
+@media (max-width: 767px) {
+  #hero {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+  }
+
+  #hero h1 {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+      margin-bottom: 20px; /* Add space below the header text */
+  }
+
+  #bcn-svg {
+      margin-bottom: 20px; /* Add space below the SVG */
+  }
+
+  h2 {
+      margin-top: 40px; /* Add extra space above "My Work" */
+  }
+
+  .work .row,
+  .row.box-shadow {
+      flex-direction: column; /* Stack work sections vertically */
+  }
+
+  .work .col-md-6,
+  .row.box-shadow .col-md-6 {
+      width: 100%;
+      padding: 10px;
+  }
+}
